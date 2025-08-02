@@ -1,0 +1,60 @@
+PANDUAN CARA RUN SISTEM :
+clone repositori GitHub ke local
+ketikan perintah npm install di terminal yang menagarah ke directorynya untuk install package yang digunakan disistem
+setelah berhasil jalankan dengan perintah node app.js untuk menjalankan system nanti otomatis model akan  ke migrate ke database nya , sebelum menjalankan perintah ini buat database toko_app di MySQL , agar nanti semua model akan di migrate menjadi tabel didatabase
+jalankan di postman atau thunder client dengan method POST:localhost/:5000/init-produk untuk menambahkan 10produk pada table produk
+jalankan node app.js buka di browsere localhost://5000 nanti akan menampilkan card untuk masuk ke sistem admin page, dan chatbot
+
+PANDUAN CARA MENGGUNKAN SISTEM ADMIN PAGE:
+
+buka card sistem admin page
+nanti akan ada pilihan input produk, dan cancel pembelian
+input produk untuk menambahkan produk ke pembelian
+cancel pembelian untuk membatalkan pembelian
+
+PANDUANG CARA MENGGUNAKAN CHATBOT : 
+💡 Cara Kerja:
+Chatbot akan membaca input dari user.
+Jika pesan mengandung kata kunci tertentu (seperti “halo” atau “terima kasih”), maka chatbot akan membalas dengan respons yang sesuai.
+
+🛠️ Kata Kunci dan Respon:
+
+1. Jika user mengetik:
+   - "halo"
+   - "hai"
+   
+   👉 Maka bot akan membalas:
+   - "Halo juga! Ada yang bisa saya bantu?"
+
+2. Jika user mengetik:
+   - "siapa kamu"
+   - "siapa nama kamu"
+   
+   👉 Maka bot akan membalas:
+   - "Saya adalah chatbot buatan kamu sendiri! 🤖"
+
+3. Jika user mengetik:
+   - "terima kasih"
+   
+   👉 Maka bot akan membalas:
+   - "Sama-sama! 😊"
+
+4. Jika user mengetik:
+   - "nama saya [nama_kamu]"
+   (contoh: "nama saya Rakha")
+   
+   👉 Maka bot akan membalas:
+   - "Hai Rakha, senang bertemu denganmu!"
+
+5. Jika user mengetik:
+   - "umur kamu"
+   
+   👉 Maka bot akan membalas:
+   - "Saya masih muda, baru dibuat beberapa menit lalu 😄"
+
+6. Jika user mengetik:
+   - "cuaca"
+   
+   👉 Maka bot akan membalas:
+   - "Saya belum bisa mengecek cuaca. Tapi semoga harimu cerah! 🌤️"
+

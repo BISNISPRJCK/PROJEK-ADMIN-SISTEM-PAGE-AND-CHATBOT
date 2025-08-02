@@ -35,19 +35,19 @@ const __dirname = path.dirname(__filename)
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "view"))
 
-// async function initializeDatabase(){
-//   try {
-//     await db.authenticate();
-//     console.log("Database conntected...");
-//     await db.sync({alter: true});
-//     console.log("Data dimodel telah dibuat....");
-//   } catch (error) {
-//     console.log("Database tidak terhubung");
-//     console.log(error);
-//   }
-// }
+async function initializeDatabase(){
+  try {
+    await db.authenticate();
+    console.log("Database conntected...");
+    await db.sync({alter: true});
+    console.log("Data dimodel telah dibuat....");
+  } catch (error) {
+    console.log("Database tidak terhubung");
+    console.log(error);
+  }
+}
 
-// initializeDatabase();
+initializeDatabase();
 
 app.use(express.json());
 app.use(fileUpload());
